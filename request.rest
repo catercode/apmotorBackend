@@ -1,0 +1,60 @@
+###// SignUp route 
+POST  http://localhost:3000/user/create/account
+Content-Type: application/json
+
+{ 
+    "User_ID":"Bau8",
+    "First_Name":"Bawa",
+    "Last_Name":"Malik",
+    "Email":"cater@gmail.com",
+    "Phone":"0541164463",
+    "Password":"12345676",
+    "Role":"Manager",
+    "Date":"22/12/22"
+    
+}
+
+###
+GET http://localhost:3000/user/login/0541164473/12345
+
+###
+PUT  http://localhost:3000/user/setpassword
+Content-Type: application/json
+
+{ 
+    "User_ID":"Bau8",  
+    "Password":"1111111"
+}
+//=================================================================
+###
+GET  http://localhost:3000/load/product
+
+###
+POST  http://localhost:3000/admin/add/product
+Content-Type: application/json
+
+{ 
+    "ItemID":"11110",
+    "ItemName":"AP Jarguar",
+    "Model":"110-5",
+    "Description":"MotorBike",
+    "Price":"9000",
+    "Date":"22/12/2022"
+
+}
+###
+DELETE  http://localhost:3000/admin/delete/product/11110
+###
+PUT  http://localhost:3000/admin/update/product/1111100
+Content-Type: application/json
+
+{ 
+    "ItemID":"11111",
+    "ItemName":"AP Jarguar",
+    "Model":"110-7",
+    "Description":"MotorBike",
+    "Price":"9000",
+    "Date":"22/12/2022"
+
+}
+
